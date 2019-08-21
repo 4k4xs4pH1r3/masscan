@@ -24,18 +24,12 @@ This tool is free, but consider contributing money to its developement:
 Bitcoin wallet address: 1MASSCANaHUiyTtR3bJ2sLGuMw5kDBaj4T
 
 
-# Building
+# Install
 
 On Debian/Ubuntu, it goes something like this:
 
-	$ sudo apt-get install git gcc make libpcap-dev
-	$ git clone https://github.com/robertdavidgraham/masscan
-	$ cd masscan
-	$ make
+	$ sudo apt-get install git gcc make libpcap-dev && cd /usr/share && git clone https://github.com/robertdavidgraham/masscan && cd masscan && make && make install && masscan
 
-This puts the program in the `masscan/bin` subdirectory. You'll have to
-manually copy it to something like `/usr/local/bin` if you want to
-install it elsewhere on the system.
 
 The source consists of a lot of small files, so building goes a lot faster
 by using the multi-threaded build:
